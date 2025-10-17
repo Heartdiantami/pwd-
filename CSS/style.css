@@ -1,0 +1,118 @@
+body {
+  background: linear-gradient(135deg, #F2F2F2, #EAE4D5);
+   
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  position:relative;
+}
+
+h2 {
+  text-align: center;
+  font-size: 300%;
+  font-weight: 900;
+  color: #000000;
+  margin-bottom: 35px;
+  letter-spacing: 0.5px;
+}
+
+.background-container {
+  position: relative;
+  width: 500%;
+  max-width: 1200px;
+  height: 1400px;
+  background-color: #B6B09F;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(151, 148, 148, 0.2);
+  z-index: 1;
+}
+
+/* ===== CONTAINER DEPAN (FORM) ===== */
+.form-wrapper {
+  position: absolute;
+  top: 250px; /* naikkan posisi form */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  z-index: 2; /* supaya di atas container */
+}
+
+fieldset {
+  border: 1.5px solid #faf9fd;
+  background-color: #c2c2c2d7;
+  border-radius: 15px;
+  padding: 40px 50px;
+  margin-bottom: 30px;
+}
+
+legend {
+  color: #faf9fd;
+  font-weight: 600;
+  font-size: 1.20rem;
+  padding: 0 10px;
+}
+
+.centered-legend {
+  text-align: center;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #faf9fd;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+
+form label {
+  display: block;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #333;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #E1EACD;
+  box-shadow: 0 0 6px rgba(212, 189, 149, 0.81);
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #000000;
+}
